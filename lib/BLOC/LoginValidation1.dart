@@ -9,6 +9,7 @@ class LoginValidation1
       // List<UserLoginInfo> userList1 = []; 
       //       userList1 = await new Serialition().loadShowData();
       Map userInfoMap = await new Serialition().loadShowData();
+      //Below code is written for converting map to list.
       userInfoMap.entries.forEach((e) => userList.add(UserLoginInfo(e.key, e.value)));
       print(userList);
       //var user = UserLoginInfo.fromJson(userInfoMap);
